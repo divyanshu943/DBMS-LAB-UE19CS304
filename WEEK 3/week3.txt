@@ -1,0 +1,26 @@
+create database dbname ;
+\c dbname 
+create table tablename(att  datatype,att datatype );
+
+datatypes: int(1) , char, varchar   a varchar  srn varchar(10)
+
+\d list of all the relations
+
+\d table name 
+
+primary key , foreign key 
+
+create table tbname ( attr dt primary key )
+create table tbname(attr dt , att2 dt ,.........,priamry key (attr, attr1));
+
+alter table tbname add constraint pk primary key (attr);
+
+
+create table (attr serial primary key ) // only if the domain of the attr is int
+
+
+create table tbname( attr dt foreign key references base_tablename(attr))
+
+alter table tbname add constraint fk foreign key (attr)references base_tablename(attr);
+
+insert into table table name values(a,a,a,.......);
