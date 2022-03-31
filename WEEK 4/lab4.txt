@@ -1,0 +1,44 @@
+constarints:
+1. Pk
+2. fk
+3. not null
+  create table a ( a int)
+create table emp (fname varchar(10) not null )
+4. default 
+ 
+create table a ( a int default 10,b int );
+create table a1 ( a varchar default 'abc', b int );
+
+insert into a  values(1);
+a = 1 , b= null 
+insert into a(b) values(1);
+a  - 10 and b - 1;
+
+5. unique car ( reg no, eng no)
+
+create table car( regn ....., engno varchar(10) unique not null )
+alter table tn add uk unique(engno)
+
+6. check :
+ sem int check(sem >0 and sem <9)
+
+drop and trucate - del tables 
+drop - del all the rec + schema 
+truncate - del the records but not schema 
+drop table tn;
+truncate table tn;
+  
+
+view is a logical table 
+
+create table stud( name , srn, dname);
+
+create view viewname as select
+
+create view cse-student as select * from stud where dname ='cse';
+create view ec-student as select * from stud where dname ='ec';
+
+drop view view name ;
+
+add colum join date - make sure join date is always greater than bdate
+join date ( age  greater than 21)
